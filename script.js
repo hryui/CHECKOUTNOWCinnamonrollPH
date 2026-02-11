@@ -7,7 +7,22 @@ onload = () => {
   const nextBtn = document.getElementById("nextID");
   const closeBtn = document.getElementById("closeBtn");
   
-  
+
+
+window.addEventListener("load", () => {
+  const music = document.getElementById("bgMusic");
+
+  function startMusic() {
+    music.play();
+    document.removeEventListener("click", startMusic);
+  }
+
+  document.addEventListener("click", startMusic);
+});
+
+
+
+
   openBtn.addEventListener("click", () => {
       wrapper.classList.add("open");
       openBtn.style.display = "none";
