@@ -7,6 +7,7 @@ onload = () => {
   const nextBtn = document.getElementById("nextID");
   const closeBtn = document.getElementById("closeBtn");
   
+  
   openBtn.addEventListener("click", () => {
       wrapper.classList.add("open");
       openBtn.style.display = "none";
