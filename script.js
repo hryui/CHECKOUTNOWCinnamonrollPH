@@ -6,19 +6,19 @@ onload = () => {
   const openBtn = document.getElementById("openBtn");
   const nextBtn = document.getElementById("nextID");
   const closeBtn = document.getElementById("closeBtn");
-  
+ 
+    
 
+const music = document.getElementById("bgMusic");
 
-window.addEventListener("load", () => {
-  const music = document.getElementById("bgMusic");
-
-  function startMusic() {
+function startMusic() {
     music.play();
-    document.removeEventListener("Kimie!", startMusic);
-  }
+    document.removeEventListener("click", startMusic);
+}
 
-  document.addEventListener("Kimie!", startMusic);
-});
+
+document.addEventListener("click", startMusic);
+
 
 
 
