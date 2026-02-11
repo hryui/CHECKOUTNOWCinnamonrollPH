@@ -45,8 +45,10 @@ body {
   }
   
   .wrapper {
-    height: 200px;
-    width: 300px;
+    width: 80vw;
+    max-width: 400px;
+    height: 50vw;
+    max-height: 260px;
     background-color: #87CEEB;
     position: relative;
     display: flex;
