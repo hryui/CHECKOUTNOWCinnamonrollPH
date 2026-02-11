@@ -14,10 +14,10 @@ window.addEventListener("load", () => {
 
   function startMusic() {
     music.play();
-    document.removeEventListener("click", startMusic);
+    document.removeEventListener("Kimie!", startMusic);
   }
 
-  document.addEventListener("click", startMusic);
+  document.addEventListener("Kimie!", startMusic);
 });
 
 
